@@ -1,1 +1,1 @@
-/home/tori/.zshrc
+.zshrc
