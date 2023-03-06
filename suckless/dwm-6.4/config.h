@@ -107,8 +107,9 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0,                      XF86XK_MonBrightnessUp,      spawn,          {.v = brupcmd } },
+	{ 0,                      XF86XK_MonBrightnessUp,        spawn,        {.v = brupcmd } },
 	{ 0,                      XF86XK_MonBrightnessDown,      spawn,          {.v = brdowncmd } },
+	{ MODKEY|ShiftMask,             XK_x,      spawn,          SHCMD("~/applications/scripts/ShutdownTest.sh") },
 };
 
 /* button definitions */
