@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
+#define NOCOMPOSITE 1
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -110,6 +111,7 @@ static const Key keys[] = {
 	{ 0,                      XF86XK_MonBrightnessUp,        spawn,        {.v = brupcmd } },
 	{ 0,                      XF86XK_MonBrightnessDown,      spawn,          {.v = brdowncmd } },
 	{ MODKEY|ShiftMask,             XK_x,      spawn,          SHCMD("~/applications/scripts/ShutdownTest.sh") },
+	{ ControlMask|ShiftMask,        XK_m,      spawn,          SHCMD("~/applications/scripts/mommys-switch") },
 };
 
 /* button definitions */
