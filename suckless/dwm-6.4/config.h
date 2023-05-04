@@ -112,6 +112,7 @@ static const Key keys[] = {
 	{ 0,                      XF86XK_MonBrightnessDown,      spawn,          {.v = brdowncmd } },
 	{ MODKEY|ShiftMask,             XK_x,      spawn,          SHCMD("~/applications/scripts/ShutdownTest.sh") },
 	{ ControlMask|ShiftMask,        XK_m,      spawn,          SHCMD("~/applications/scripts/mommys-switch") },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("~/applications/scripts/ScreenShot") },
 };
 
 /* button definitions */
