@@ -9,6 +9,8 @@
 - Smenu
 - Slstatus
 
+![demo.png](demo.png)
+
 ## License
 
 none Do the fuck you want
