@@ -7,6 +7,10 @@ bindkey '\e[4~' end-of-line
 bindkey '^H' delete-char
 bindkey '^ ' autosuggest-accept
 
+#Ignore Duplicate Commands
+setopt HIST_IGNORE_ALL_DUPS
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -26,6 +30,9 @@ export PATH="$HOME/applications/nuclear/:$PATH"
 export PATH="$HOME/applications/ghidra_10.2.3_PUBLIC/:$PATH"
 export PATH="$HOME/applications/jdk-17.0.6/bin:$PATH"
 export PATH="$HOME/applications/scripts/:$PATH"
+export PATH="$HOME/applications/netbeans/bin:$PATH"
+export TERMINAL=st
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -48,6 +55,16 @@ alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias wall='cd ~/Pictures/Wallpapers'
+
+# alias routes /
+
+alias pic='~/Pictures/'
+alias doc='~/Documents/'
+alias down='~/Downloads/'
+alias app='~/applications/'
+alias proj='~/Documents/Projects/'
+alias dwm='~/.config/suckless/dwm-6.4/'
+alias st='~/.config/suckless/st-0.9/'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
