@@ -1,5 +1,5 @@
-#source $HOME/applications/shell-mommy/shell-mommy.sh
-#precmd() { mommy "$PROMPT_COMMAND" }
+source $HOME/applications/shell-mommy/shell-mommy.sh
+precmd() { mommy "$PROMPT_COMMAND" }
 
 # Habilitar tecla inicio y fin en la terminal
 bindkey "^A" beginning-of-line
@@ -31,7 +31,6 @@ export PATH="$HOME/applications/ghidra_10.2.3_PUBLIC/:$PATH"
 export PATH="$HOME/applications/jdk-17.0.6/bin:$PATH"
 export PATH="$HOME/applications/scripts/:$PATH"
 export PATH="$HOME/applications/netbeans/bin:$PATH"
-export TERMINAL=st
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
@@ -55,6 +54,10 @@ alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias wall='cd ~/Pictures/Wallpapers'
+alias pythonenv='$PWD/venv/bin/python'
+alias pipenv='$PWD/venv/bin/pip'
+alias pip3env='$PWD/venv/bin/pip3'
+alias activateenv='$PWD/venv/bin/activate'
 
 # alias routes /
 
