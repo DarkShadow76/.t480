@@ -13,6 +13,6 @@
 
 ## License
 
-none Do the fuck you want
+none
 
 **Free Software, Hell Yeah!**
