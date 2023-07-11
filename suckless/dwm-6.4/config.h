@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	{ "DrRacket",		NULL,	    NULL,       1<<2,       0,           -1 },
 	{ "Code",		NULL,       NULL,       1<<2,       0,           -1 },
 	{ "RStudio",		NULL,       NULL,       1<<2,       0,           -1 },
+	{ "Emacs",		NULL,       NULL,       1<<2,       0,           -1 },
 	{ "discord",		NULL,       NULL,       1<<3,       0,           -1 },
 	{ "TelegramDesktop",	NULL,       NULL,       1<<4,       0,           -1 },
 	{ "nuclear",		NULL,       NULL,       1<<5,       0,           -1 },
