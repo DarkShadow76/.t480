@@ -1,5 +1,7 @@
-source $HOME/applications/shell-mommy/shell-mommy.sh
+source $HOME/applications/script/shell-mommy/shell-mommy.sh
 precmd() { mommy "$PROMPT_COMMAND" }
+
+PROMPT='%n@%m %1d %# '
 
 # Habilitar tecla inicio y fin en la terminal
 bindkey "^A" beginning-of-line
@@ -22,16 +24,28 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/applications/ZeroNet-linux-dist-linux64/:$PATH"
-export PATH="$HOME/applications/pycharm-2022.3/bin:$PATH"
-export PATH="$HOME/applications/clion-2022.3/bin:$PATH"
+export PATH="$HOME/applications/pycharm-2023.1.3/bin:$PATH"
+export PATH="$HOME/.rubies/ruby-3.2.2/bin:$PATH"
+export PATH="$HOME/applications/clion-2023.1.4/bin:$PATH"
 export PATH="$HOME/applications/DrRacket/bin:$PATH"
 export PATH="$HOME/applications/node/bin:$PATH"
+export PATH="$HOME/applications/dotnet/:$PATH"
+export PATH="$HOME/applications/dbeaver/:$PATH"
 export PATH="$HOME/applications/nuclear/:$PATH"
-export PATH="$HOME/applications/ghidra_10.2.3_PUBLIC/:$PATH"
-export PATH="$HOME/applications/jdk-17.0.6/bin:$PATH"
+export PATH="$HOME/applications/dbeaver:$PATH"
+export PATH="$HOME/applications/go/bin:$PATH"
+export PATH="$HOME/applications/jdk-17.0.7/bin:$PATH"
 export PATH="$HOME/applications/scripts/:$PATH"
 export PATH="$HOME/applications/netbeans/bin:$PATH"
+export PATH="$HOME/applications/tor-browser:$PATH"
+export PATH="$HOME/applications/google-cloud-sdk/bin:$PATH"
+
 export _JAVA_AWT_WM_NONREPARENTING=1
+export BROWSER="firefox"
+export EDITOR="nvim"
+export GIT_EDITOR="nvim"
+#export GOPATH="$HOME/applications/go"
+#export JAVA_HOME="$HOME/home/tori/applications/jdk-17.0.7"
 
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -88,4 +102,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
