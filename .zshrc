@@ -12,7 +12,6 @@ bindkey '^ ' autosuggest-accept
 #Ignore Duplicate Commands
 setopt HIST_IGNORE_ALL_DUPS
 
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -22,30 +21,32 @@ fi
 
 # RANGER_LOAD_DEFAULT_RC=FALSE
 
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/applications/ZeroNet-linux-dist-linux64/:$PATH"
+export PATH="$HOME/applications/idea-IU-232.9921.47/bin:$PATH"
 export PATH="$HOME/applications/pycharm-2023.1.3/bin:$PATH"
-export PATH="$HOME/.rubies/ruby-3.2.2/bin:$PATH"
+export PATH="$HOME/applications/google-cloud-sdk/bin:$PATH"
 export PATH="$HOME/applications/clion-2023.1.4/bin:$PATH"
-export PATH="$HOME/applications/DrRacket/bin:$PATH"
-export PATH="$HOME/applications/node/bin:$PATH"
-export PATH="$HOME/applications/dotnet/:$PATH"
-export PATH="$HOME/applications/dbeaver/:$PATH"
-export PATH="$HOME/applications/nuclear/:$PATH"
-export PATH="$HOME/applications/dbeaver:$PATH"
-export PATH="$HOME/applications/go/bin:$PATH"
+export PATH="$HOME/applications/minecraft-launcher:$PATH"
+export PATH="$HOME/applications/dart/lib/dart/bin:$PATH"
 export PATH="$HOME/applications/jdk-17.0.7/bin:$PATH"
-export PATH="$HOME/applications/scripts/:$PATH"
+export PATH="$HOME/applications/DrRacket/bin:$PATH"
 export PATH="$HOME/applications/netbeans/bin:$PATH"
 export PATH="$HOME/applications/tor-browser:$PATH"
-export PATH="$HOME/applications/google-cloud-sdk/bin:$PATH"
+export PATH="$HOME/.rubies/ruby-3.2.2/bin:$PATH"
+export PATH="$HOME/applications/scripts/:$PATH"
+export PATH="$HOME/applications/node/bin:$PATH"
+export PATH="$HOME/applications/dbeaver/:$PATH"
+export PATH="$HOME/applications/go/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export CPLUS_INCLUDE_PATH=/usr/include/gtkmm-4.0:$CPLUS_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/usr/include/glibmm-2.4:$CPLUS_INCLUDE_PATH
 
 export _JAVA_AWT_WM_NONREPARENTING=1
-export BROWSER="firefox"
-export EDITOR="nvim"
-export GIT_EDITOR="nvim"
-#export GOPATH="$HOME/applications/go"
-#export JAVA_HOME="$HOME/home/tori/applications/jdk-17.0.7"
+#export BROWSER="firefox-bin"
+#export EDITOR="nvim"
+#export GIT_EDITOR="nvim"
+export GOPATH="$HOME/applications/go"
+export JAVA_HOME="$HOME/home/tori/applications/jdk-17.0.7"
 
 source ~/.config/powerlevel10k/powerlevel10k.zsh-theme
 
