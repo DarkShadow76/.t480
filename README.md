@@ -11,7 +11,7 @@
 
 ![demo.png](demo.png)
 
-# Partition Scheme with LVM + LUKS (Inverted Order)
+# Partition Scheme with LVM + LUKS
 
 | **Layer**            | **Description**                          | **Example**            |
 |----------------------|-------------------------------------------|------------------------|
