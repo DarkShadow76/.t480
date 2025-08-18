@@ -1,0 +1,44 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-march=native -O2 -pipe -mtune=skylake"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sse sse2 sse3 \ 
+sse4_1 sse4_2 ssse3"
+MAKEOPTS="-j8 -l8"
+PORTAGE_NICENESS=1
+EMERGE_DEFAULT_OPTS="--jobs=8 --load-average=8 \
+--backtrack=30 --complete-graph=y --color=y --keep-going --read-news=y \
+--verbose-conflicts --with-bdeps=y"
+FEATURES="${FEATURES} ccache parallel-install parallel-fetch candy unmerge-orphans binpkg-request-signature"
+CCACHE_DIR="/var/cache/ccache"
+CCACHE_SIZE="2G"
+ACCEPT_LICENSE="*"
+ACCEPT_KEYWORDS="~amd64"
+NoUSE="-gnome -kde -cups -dvd -dvdr -cdr -systemd -wayland -ios -ipod -gtk -iee1394 \
+-ibm -aqua -css -emboss -nvidia -vulkan -telemetry"
+USE="${NoUSE} elogind X zeroconf tkip pipewire pulseaudio bluetooth"
+LLVM_TARGETS="X86"
+# LLVM_SLOT="llvm_slot_20"
+INPUT_DEVICES="libinput synaptics"
+VIDEO_CARDS="intel"
+GRUB_PLATFORMS="efi-64"
+BINPKG_FORMAT="gpkg"
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+PORTAGE_TMPDIR="/var/tmp/portage"
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+# Mask
+INSTALL_MASK="/usr/share/applications/*.desktop"
+# Python Target
+PYTHON_TARGETS="python3_12 python3_13"
+#PYTHON_SINGLE_TARGET="python3_11"
+RUBY_TARGETS="ruby33"
